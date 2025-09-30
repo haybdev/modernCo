@@ -383,7 +383,7 @@ html {
 }
 @media (max-width: 600px) {
     .footer_wrapper {
-        justify-content: left;
+        justify-content: flex-start;
         gap: var(--spacing-lg);
     }
 }
