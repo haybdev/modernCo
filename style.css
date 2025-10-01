@@ -131,6 +131,12 @@ html {
     width: 50rem;
     text-align: center;
 }
+@media (max-width: 600px){
+    .hero_content-wrapper {
+        width: 100%;
+        padding: var(--spacing-md);
+    }
+}
 .hero_title {
     font-size: 6rem;
     margin-bottom: var(--spacing-md);
