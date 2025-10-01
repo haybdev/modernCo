@@ -461,6 +461,11 @@ html {
     display: flex;
     gap: var(--spacing-md);
 }
+@media (max-width: 600px){
+    .footer_copyright-link {
+        gap: 5px;
+    }
+}
 .footer_copyright-link > a {
     text-decoration: none;
     color: var(--color-accent);
