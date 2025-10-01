@@ -199,6 +199,11 @@ html {
     gap: var(--spacing-md);
     margin: auto;
 }
+@media (max-width: 600px){
+    .feature_subheading {
+        width: 100%;
+    }
+}
 .features_card-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -206,6 +211,11 @@ html {
     gap: var(--spacing-lg);
     margin-top: 4rem;
 
+}
+@media (max-width: 600px) {
+    .features_card-wrapper {
+        width: 100%;
+    }
 }
 .feature_card {
     width: 40rem;
