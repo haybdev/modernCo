@@ -37,7 +37,6 @@ html {
 @media (max-width: 600px) {
   html {
     font-size: 45%;
-    overflow: hidden;
   }
 }
 @media (max-width: 400px) {
@@ -55,6 +54,11 @@ html {
     padding: var(--spacing-md) 6rem;
     z-index: 1000;
 }
+@media (max-width: 600px) {
+    .header {
+        background-color: #fff;
+    }
+}
 
 .header-logo {
     font-size: var(--font-lg);
@@ -66,6 +70,11 @@ html {
     list-style: none;
     align-items: center;
     font-size: var(--font-main);
+}
+@media (max-width: 600px) {
+    .header_nav-list{
+        display: none;
+    }
 }
 .header_nav-list-item {
     text-decoration: none;
@@ -94,12 +103,6 @@ html {
     display: none;
 }
 @media (max-width: 600px) {
-    .header {
-        background-color: #fff;
-    }
-    .header_nav-wrapper{
-        display: none;
-    }
   .header_menu-icon {
     display: block;
   }
@@ -181,6 +184,12 @@ html {
     color: #4b5563;
     font-size: var(--font-main);
 }
+@media (max-width: 600px) {
+    .features_container {
+        width: 100%;
+        padding: var(--spacing-lg);
+    }
+}
 
 .feature_subheading {
     text-align: center;
@@ -190,18 +199,13 @@ html {
     gap: var(--spacing-md);
     margin: auto;
 }
-.features_card-container {
+.features_card-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--spacing-lg);
     margin-top: 4rem;
 
-}
-@media (max-width: 600px) {
-    .features_card-container {
-        padding: var(--spacing-md);
-    }
 }
 .feature_card {
     width: 40rem;
@@ -250,6 +254,11 @@ html {
     background-color: var(--color-accent);
     font-size: var(--font-main);
 }
+@media (max-width: 600px){
+    .testimonial_container {
+        padding: var(--spacing-lg);
+    }
+}
 .testimonial_subheading {
     display: flex;
     flex-direction: column;
@@ -265,6 +274,12 @@ html {
     gap: var(--spacing-lg);
     margin-top: 4rem;
     justify-content: center;
+}
+@media (max-width: 600px) {
+    .testimonial_card {
+        width: 100%;
+        padding: var(--spacing-md);
+    }
 }
 .testimonial_card {
     display: flex;
@@ -387,6 +402,11 @@ html {
         gap: var(--spacing-lg);
     }
 }
+@media (max-width: 400px) {
+    .footer_wrapper {
+        justify-content: space-between;
+    }
+}
 
 .footer_wrap {
     width: 23rem;
@@ -397,7 +417,7 @@ html {
 }
 @media (max-width: 600px){
     .footer_wrap {
-        gap: 5px;
+        gap: var(--spacing-sm);
     }
 }
 .footer_wrap-link {
