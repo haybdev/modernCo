@@ -54,7 +54,7 @@ html {
   padding: var(--spacing-md) 6rem;
   z-index: 1000;
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .header {
     background-color: #fff;
   }
@@ -71,7 +71,7 @@ html {
   align-items: center;
   font-size: var(--font-main);
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .header_nav-list {
     display: none;
   }
@@ -102,7 +102,7 @@ html {
 .header_menu-icon {
   display: none;
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .header_menu-icon {
     display: block;
   }
@@ -113,6 +113,11 @@ html {
 }
 main {
     width: 100%;
+}
+@media (max-width: 1200px){
+    main {
+        width: 100%;
+    }
 }
 
 /* Hero Section */
