@@ -1,3 +1,3 @@
-let age = 6
+let age = "hello"
 
-console.log(age)
+console.log(age.length)
