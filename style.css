@@ -446,6 +446,7 @@ html {
     gap: var(--spacing-md);
     color: var(--color-accent);
 }
+
 @media (max-width: 600px){
     .footer_wrap {
         width: 100%;
