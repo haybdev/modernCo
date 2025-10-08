@@ -60,7 +60,7 @@ html {
     }
 }
 
-.header-logo {
+.header_logo {
     font-size: var(--font-lg);
     color: #0e7490;
 }
@@ -74,6 +74,15 @@ html {
 @media (max-width: 600px) {
     .header_nav-list{
         display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        padding: var(--spacing-md);
+    }
+    .header_nav-list.show{
+        display: flex;
     }
 }
 .header_nav-list-item {
@@ -105,6 +114,7 @@ html {
 @media (max-width: 600px) {
   .header_menu-icon {
     display: block;
+    cursor: pointer;
   }
   .header_menu-icon > i {
     font-size: 3rem;
@@ -152,7 +162,11 @@ html {
     justify-content: center;
     gap: var(--spacing-sm);
 }
-
+@media (max-width: 600px){
+    .hero_btn {
+        margin-top: var(--spacing-lg);
+    }
+}
 .hero_btn1 {
     padding: var(--spacing-sm) var(--spacing-md);
     border: none;

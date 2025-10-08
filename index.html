@@ -20,12 +20,13 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+  <script src="./script.js" defer></script>
   <body>
     <!-- Header Section -->
     <header class="header">
-      <h1 class="header-logo">ModernCo</h1>
+      <h1 class="header_logo">ModernCo</h1>
       <nav class="header_nav-wrapper">
-        <ul class="header_nav-list">
+        <ul class="header_nav-list" id="header_nav-list">
           <li class="header_nav-list-item">
             <a href="" class="header_nav-list-item">Home</a>
           </li>
@@ -41,7 +42,7 @@
           <button class="header_nav-btn">Get Started</button>
         </ul>
       </nav>
-      <div class="header_menu-icon">
+      <div class="header_menu-icon" id="hamburger">
         <i class="ph-fill ph-list"></i>
       </div>
     </header>
@@ -352,6 +353,5 @@
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
   </body>
 </html>
