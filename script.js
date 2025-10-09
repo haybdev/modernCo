@@ -43,37 +43,43 @@
 //     console.log(j)
 // }
 
-function calculator(operator, num1, num2) {
-  if (operator === "+") {
-    return num1 + num2;
-  } else if (operator === "-") {
-    return num1 - num2;
-  } else if (operator === "*") {
-    return num1 * num2;
-  } else if (operator === "/" && num2 !== 0) {
-    return num1 / num2;
-  } else {
-    return "Undefined";
-  }
-}
+// function calculator(operator, num1, num2) {
+//   if (operator === "+") {
+//     return num1 + num2;
+//   } else if (operator === "-") {
+//     return num1 - num2;
+//   } else if (operator === "*") {
+//     return num1 * num2;
+//   } else if (operator === "/" && num2 !== 0) {
+//     return num1 / num2;
+//   } else {
+//     return "Undefined";
+//   }
+// }
 
-console.log(calculator("/", 20, 1));
+// console.log(calculator("/", 20, 1));
 
 // const logo = document.getElementsByClassName(".header_logo")
 // logo.
 
-function ageCalculator(name, currentYear, birthYear) {
-  let age = currentYear - birthYear;
-  if (age === 50) {
-    return `Hey ${name}, Congratulations on your golden jubilee!`;
-  } else {
-    return `${name}, You're now ${age}!`;
-  }
-}
+// function ageCalculator(name, currentYear, birthYear) {
+//   let age = currentYear - birthYear;
+//   if (age === 50) {
+//     return `Hey ${name}, Congratulations on your golden jubilee!`;
+//   } else {
+//     return `${name}, You're now ${age}!`;
+//   }
+// }
 
-const hamburger = document.getElementById('hamburger');
-const navList = document.getElementById('header_nav-list');
+const hamburger = document.getElementById("hamburger");
+const navList = document.getElementById("header_nav-list");
+const navListItem = document.querySelectorAll(".header_nav-list-item");
 
-hamburger.addEventListener('click', () => {
-  navList.classList.toggle('show');
-})
+hamburger.addEventListener("click", () => {
+  navList.classList.toggle("show");
+  navListItem.forEach((items) => {
+    Object.assign(items.style, {
+      color: "#0891b2",
+    });
+  });
+});
