@@ -94,3 +94,8 @@ navListItem.forEach((link) => {
     targetSection.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// Button link
+document.getElementById('getstarted-btn').addEventListener('click', () => {
+    window.location.href = 'https://wa.me/2348106017888';
+  });
