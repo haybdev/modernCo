@@ -71,6 +71,7 @@
 //   }
 // }
 
+// Navigation Hamburger icon
 const hamburger = document.getElementById("hamburger");
 const navList = document.getElementById("header_nav-list");
 const navListItem = document.querySelectorAll(".header_nav-list-item");
@@ -81,5 +82,15 @@ hamburger.addEventListener("click", () => {
     Object.assign(items.style, {
       color: "#0891b2",
     });
+  });
+});
+
+// Smooth Scroll
+navListItem.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const targetId = link.id.replace("-link", "");
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({ behavior: "smooth" });
   });
 });
